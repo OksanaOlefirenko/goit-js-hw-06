@@ -14,6 +14,7 @@ const images = [
 ];
 
 const galleryEl = document.querySelector(".gallery");
-const imgEl = images.map(({ url, alt }) => `<li class="list-item__gallery"> <img src=${url} alt=${alt} width = 450 height = 300/> </li>`).join("");
+const imgEl = images.map(({ url, alt }) => `<li class="list-item__gallery"> <img src="${url}" alt="${alt}" width = "450" height = "300" /> </li>`).join("");
 galleryEl.insertAdjacentHTML("beforeend", imgEl);
 galleryEl.setAttribute("style", "list-style-type:none; display: flex; align-items: center");
+
